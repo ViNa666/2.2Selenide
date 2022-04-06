@@ -1,8 +1,12 @@
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
+
 import org.junit.jupiter.api.Test;
+
+
 import java.text.SimpleDateFormat;
 import java.time.Duration;
+
 import java.util.Date;
 
 
@@ -11,7 +15,6 @@ import static com.codeborne.selenide.Selenide.*;
 
 
 public class CardDeliveryTest {
-
 
 
     @Test
@@ -36,6 +39,12 @@ public class CardDeliveryTest {
 
         $x("//*[contains(text(), 'Успешно!')]").should(Condition.appear, Duration.ofSeconds(20));
         $x("//*[contains(text(), 'Встреча успешно забронирована на')]").should(Condition.appear, Duration.ofSeconds(20));
+
+
+
+
+
+
 
 
 
